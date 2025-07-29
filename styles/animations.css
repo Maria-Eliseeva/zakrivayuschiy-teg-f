@@ -1,21 +1,15 @@
-.save-button,
-.popover__button,
-.card__like-button {
+.page__button {
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
 }
 
-.save-button:focus,
-.popover__button:focus,
-.card__like-button:focus {
+.page__button:focus {
   box-shadow: 2px 2px 0 #000;
   outline: none;
 }
 
-.save-button::before,
-.popover__button::before,
-.card__like-button::before {
+.page__button::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -26,15 +20,11 @@
   transition: translate 0.5s ease-in-out;
   translate: -100% 0;
 }
-.save-button:hover,
-.popover__button:hover,
-.card__like-button:hover,
+.page__button:hover,
 .like-icon:hover {
   cursor: pointer;
 }
-.save-button:hover::before,
-.popover__button:hover::before,
-.card__like-button:hover::before {
+.page__button:hover::before {
   translate: 0 0;
 }
 
