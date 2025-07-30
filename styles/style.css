@@ -86,8 +86,8 @@
   background-size: cover;
 }
 .card__img {
-  width: calc(var(--block-inline-size) - 4px);
   display: block;
+  width: calc(var(--block-inline-size) - 4px);
   object-fit: cover;
   object-position: center;
 }
@@ -114,9 +114,9 @@
     (-webkit-text-stroke: 1px var(--stroke-color))
 ) {
   .watermark {
+    text-shadow: none;
     -webkit-text-stroke: 1px var(--stroke-color);
     text-stroke: 1px var(--stroke-color);
-    text-shadow: none;
   }
 }
 
@@ -141,11 +141,9 @@
 .card__text {
   color: var(--page-text-color);
   font-family: var(--main-font), sans-serif;
-
   font-size: 18px;
   font-style: normal;
   line-height: 117%;
-  font-variation-settings: "slnt" 0, "wght" var(--text-weight);
 }
 
 .button__container {
@@ -173,8 +171,8 @@
 }
 .like-icon {
   height: 35px;
-  aspect-ratio: 1/1;
   margin: auto;
+  aspect-ratio: 1/1;
 }
 .button__text {
   position: relative;
